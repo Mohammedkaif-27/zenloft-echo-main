@@ -20,73 +20,113 @@ export function useVoice() {
   const [transcript, setTranscript] = useState("");
 
   const recognitionRef = useRef<any>(null);
+  // Use a ref to track the latest voice state (avoids stale closures)
+  const voiceStateRef = useRef<VoiceState>("idle");
+
+  const updateState = (state: VoiceState) => {
+    voiceStateRef.current = state;
+    setVoiceState(state);
+  };
 
   /**
    * Start listening (Speech-to-Text)
    */
   const startListening = useCallback((onResult: (text: string) => void) => {
-    if (!SpeechRecognitionAPI) return;
+    if (!SpeechRecognitionAPI) {
+      console.warn("Speech Recognition is not supported in this browser.");
+      return;
+    }
 
-    const recognition = new SpeechRecognitionAPI();
-    recognition.continuous = false;
-    recognition.interimResults = true;
-    recognition.lang = "en-IN";
+    // Stop any existing session first
+    if (recognitionRef.current) {
+      try { recognitionRef.current.abort(); } catch { /* ignore */ }
+      recognitionRef.current = null;
+    }
 
-    recognition.onstart = () => {
-      setVoiceState("listening");
-      setTranscript("");
-    };
+    try {
+      const recognition = new SpeechRecognitionAPI();
+      recognition.continuous = false;
+      recognition.interimResults = true;
+      recognition.lang = "en-IN";
 
-    recognition.onresult = (event: any) => {
-      let interim = "";
-      let final = "";
+      let finalTranscript = "";
 
-      for (let i = 0; i < event.results.length; i++) {
-        const result = event.results[i];
-        if (result.isFinal) {
-          final += result[0].transcript;
-        } else {
-          interim += result[0].transcript;
+      recognition.onstart = () => {
+        updateState("listening");
+        setTranscript("");
+        finalTranscript = "";
+      };
+
+      recognition.onresult = (event: any) => {
+        let interim = "";
+        let final = "";
+
+        for (let i = 0; i < event.results.length; i++) {
+          const result = event.results[i];
+          if (result.isFinal) {
+            final += result[0].transcript;
+          } else {
+            interim += result[0].transcript;
+          }
         }
-      }
 
-      setTranscript(final || interim);
+        setTranscript(final || interim);
 
-      if (final) {
-        setVoiceState("processing");
-        Promise.resolve(onResult(final.trim())).finally(() => {
-          setVoiceState("idle");
+        if (final) {
+          finalTranscript = final.trim();
+        }
+      };
+
+      recognition.onerror = (event: any) => {
+        console.warn("Speech recognition error:", event.error);
+
+        // "not-allowed" = microphone permission denied
+        // "no-speech" = no speech detected (timeout)
+        // "aborted" = user or system cancelled
+        if (event.error === "not-allowed") {
+          console.error("Microphone permission denied. Please allow microphone access.");
+        }
+
+        updateState("idle");
+        setTranscript("");
+      };
+
+      recognition.onend = () => {
+        // If we got a final transcript, send it
+        if (finalTranscript) {
+          updateState("processing");
+          const result = onResult(finalTranscript);
+          // Handle both sync and async onResult
+          Promise.resolve(result).finally(() => {
+            updateState("idle");
+            setTranscript("");
+          });
+        } else {
+          // No speech detected — just reset
+          updateState("idle");
           setTranscript("");
-        });
-      }
-    };
+        }
+      };
 
-    recognition.onerror = (event: any) => {
-      console.warn("Speech recognition error:", event.error);
-      setVoiceState("idle");
-      setTranscript("");
-    };
-
-    recognition.onend = () => {
-      if (voiceState === "listening") {
-        // If we ended without getting a final result, use interim
-        setVoiceState("idle");
-      }
-    };
-
-    recognitionRef.current = recognition;
-    recognition.start();
-  }, [voiceState]);
+      recognitionRef.current = recognition;
+      recognition.start();
+    } catch (err) {
+      console.error("Failed to start speech recognition:", err);
+      updateState("idle");
+    }
+  }, []);
 
   /**
    * Stop listening
    */
   const stopListening = useCallback(() => {
     if (recognitionRef.current) {
-      recognitionRef.current.stop();
+      try {
+        recognitionRef.current.stop();
+      } catch { /* ignore */ }
       recognitionRef.current = null;
     }
-    setVoiceState("idle");
+    updateState("idle");
     setTranscript("");
   }, []);
 

@@ -331,10 +331,12 @@ const ChatWidget = () => {
   };
 
   const handleVoiceInput = () => {
+    console.log("[Voice] handleVoiceInput called, voiceState:", voiceState, "isVoiceSupported:", isVoiceSupported);
     if (voiceState === "listening") {
       stopListening();
     } else {
       startListening(async (text) => {
+        console.log("[Voice] Got transcript:", text);
         await sendMessage(text);
       });
     }
