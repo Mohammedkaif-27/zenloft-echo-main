@@ -21,9 +21,17 @@ const allowedOrigins = [
   "http://localhost:5173",
   "http://localhost:4173",
   "http://localhost:8080",
+  "https://zenloftstudio.online",
+  "https://www.zenloftstudio.online",
   ...(process.env.FRONTEND_URL ? [process.env.FRONTEND_URL] : []),
 ];
-app.use(cors({ origin: allowedOrigins, credentials: true }));
+
+app.use(
+  cors({
+    origin: allowedOrigins,
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: "1mb" }));
 
 // Routes
