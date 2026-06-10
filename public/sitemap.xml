@@ -3,7 +3,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://zenloftstudio.online/</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -11,7 +11,7 @@
   <!-- Works -->
   <url>
     <loc>https://zenloftstudio.online/works</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -19,23 +19,69 @@
   <!-- Services -->
   <url>
     <loc>https://zenloftstudio.online/services</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Contact -->
+  <url>
+    <loc>https://zenloftstudio.online/contact</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
 
   <!-- Privacy -->
   <url>
     <loc>https://zenloftstudio.online/privacy</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.5</priority>
   </url>
 
   <!-- Terms -->
   <url>
     <loc>https://zenloftstudio.online/terms</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Service Detail Pages -->
+  <url>
+    <loc>https://zenloftstudio.online/services/website-development</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenloftstudio.online/services/digital-marketing</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenloftstudio.online/services/social-media-management</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenloftstudio.online/services/branding-design</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenloftstudio.online/services/content-creation</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://zenloftstudio.online/services/ai-automation</loc>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -43,121 +89,121 @@
   <!-- Project Pages -->
   <url>
     <loc>https://zenloftstudio.online/works/chronos</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/apex-gym</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/prose-ai</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/prestige-properties</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/nova-eclipse</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/mint-protocol</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/sereniq</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/nexchain</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/aura-skin</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/datastream</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/voxel-studio</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/drxp-culture</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/the-aurum-resort</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/terra-wild</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/osso</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/learnflow</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/frame-and-shadow</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/clarity-health</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/nexus-api</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://zenloftstudio.online/works/kaif-dev</loc>
-    <lastmod>2026-03-16</lastmod>
+    <lastmod>2026-06-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

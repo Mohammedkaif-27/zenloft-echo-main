@@ -36,11 +36,13 @@ export default defineConfig(({ mode }) => ({
     include: ["react", "react-dom", "@tanstack/react-query"],
   },
   build: {
+    chunkSizeWarningLimit: 850,
     rollupOptions: {
       output: {
         manualChunks: {
           "react-vendor": ["react", "react-dom", "react-router-dom"],
           "three-vendor": ["three", "@react-three/fiber", "@react-three/drei"],
+          "supabase-vendor": ["@supabase/supabase-js"],
           "ui-vendor": [
             "framer-motion",
             "lucide-react",

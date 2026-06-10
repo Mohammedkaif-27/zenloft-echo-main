@@ -80,7 +80,7 @@ const Privacy = () => {
             <section className="space-y-3">
               <h2 className="font-clash font-bold text-xl text-foreground">6. Contact Us</h2>
               <p className="text-sm leading-relaxed">
-                For questions about this policy, reach us at hello@zenloftstudio.com.
+                For questions about this policy, reach us at zenloftstudio@gmail.com.
               </p>
             </section>
           </motion.div>

@@ -87,7 +87,7 @@ const Terms = () => {
             <section className="space-y-3">
               <h2 className="font-clash font-bold text-xl text-foreground">7. Contact</h2>
               <p className="text-sm leading-relaxed">
-                Questions about these terms? Email us at hello@zenloftstudio.com.
+                Questions about these terms? Email us at zenloftstudio@gmail.com.
               </p>
             </section>
           </motion.div>
