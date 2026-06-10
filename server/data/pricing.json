@@ -1,0 +1,45 @@
+{
+  "services": {
+    "website": {
+      "name": "Website Development",
+      "packages": [
+        { "name": "Starter Website", "minINR": 8000, "maxINR": 15000, "unit": "project", "description": "Single-page or simple portfolio website" },
+        { "name": "Business Website", "minINR": 15000, "maxINR": 30000, "unit": "project", "description": "Multi-page business website with CMS" },
+        { "name": "Premium Website", "minINR": 30000, "maxINR": 60000, "unit": "project", "description": "Advanced website with animations, 3D, and custom design" },
+        { "name": "Custom Web Application", "minINR": 50000, "maxINR": 120000, "unit": "project", "description": "Full-stack SaaS, e-commerce, or dashboard application" }
+      ]
+    },
+    "ai": {
+      "name": "AI & Business Automation",
+      "packages": [
+        { "name": "Basic AI Automation", "minINR": 10000, "maxINR": 25000, "unit": "project", "description": "Simple chatbot or workflow automation" },
+        { "name": "Business Automation", "minINR": 25000, "maxINR": 60000, "unit": "project", "description": "Advanced chatbot, CRM integration, or multi-step automation" },
+        { "name": "Advanced AI Systems", "minINR": 60000, "maxINR": 150000, "unit": "project", "description": "Voice AI, RAG systems, custom AI agents" }
+      ]
+    },
+    "marketing": {
+      "name": "Digital Marketing",
+      "packages": [
+        { "name": "Starter Package", "minINR": 5000, "maxINR": 15000, "unit": "month", "description": "Basic SEO, Google My Business, social posting" },
+        { "name": "Growth Package", "minINR": 15000, "maxINR": 35000, "unit": "month", "description": "SEO + PPC + email marketing + analytics" },
+        { "name": "Premium Package", "minINR": 35000, "maxINR": 75000, "unit": "month", "description": "Full-service digital marketing with dedicated strategist" }
+      ]
+    },
+    "branding": {
+      "name": "Branding & Design",
+      "packages": [
+        { "name": "Logo Design", "minINR": 3000, "maxINR": 10000, "unit": "project", "description": "Professional logo with 3 concepts and revisions" },
+        { "name": "Brand Kit", "minINR": 8000, "maxINR": 20000, "unit": "project", "description": "Logo + color palette + typography + brand guidelines" },
+        { "name": "Complete Branding", "minINR": 20000, "maxINR": 50000, "unit": "project", "description": "Full brand identity with stationery, social templates, and style guide" }
+      ]
+    },
+    "social": {
+      "name": "Social Media Management",
+      "packages": [
+        { "name": "Starter", "minINR": 5000, "maxINR": 5000, "unit": "month", "description": "Basic content planning and posting (2 platforms)" },
+        { "name": "Growth", "minINR": 10000, "maxINR": 20000, "unit": "month", "description": "Content creation, community management, analytics (3 platforms)" },
+        { "name": "Premium", "minINR": 20000, "maxINR": 40000, "unit": "month", "description": "Full social media management with paid campaigns (5 platforms)" }
+      ]
+    }
+  }
+}

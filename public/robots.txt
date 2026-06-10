@@ -1,0 +1,9 @@
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://zenloftstudio.online/sitemap.xml
+
+# Disallow admin/internal pages
+Disallow: /api/
