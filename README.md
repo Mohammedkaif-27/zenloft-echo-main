@@ -353,7 +353,7 @@ This project is private and proprietary to ZenLoft Studio. All rights reserved.
 
 **Built with precision by [ZenLoft Studio](https://zenloftstudio.online)**
 
-Founded by **Mohammed Kaif** · Hyderabad, India
+Founded by **Mohammed Kaif** & **Soha Kousar**  **Co-Founders · ZenLoft Studio**
 
 📧 zenloftstudio@gmail.com · 📞 +91 9705407470 · 💬 WhatsApp: +91 8520030086
 
