@@ -43,6 +43,10 @@ app.get("/api/health", (_req, res) => {
   res.json({ status: "ok", timestamp: Date.now() });
 });
 
+// UptimeRobot routes
+app.get("/", (_req, res) => res.status(200).send("API is running"));
+app.get("/health", (_req, res) => res.status(200).send("OK"));
+
 app.listen(PORT, () => {
   console.log(`\n🚀 ZenLoft API Server running on http://localhost:${PORT}`);
   console.log(`   Health: http://localhost:${PORT}/api/health`);
