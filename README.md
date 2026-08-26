@@ -59,7 +59,7 @@
 | **Frontend** | Netlify | [zenloftstudio.online](https://zenloftstudio.online) | Free |
 | **Backend API** | Render | [zenloft-api.onrender.com](https://zenloft-api.onrender.com/api/health) | Free |
 | **Database** | Supabase | PostgreSQL (managed) | Free |
-| **AI Model** | Groq | Llama 3.1 8B Instant | Free |
+| **AI Model** | Groq | gpt-oss-120b | Free |
 | **Currency API** | ExchangeRate API | exchangerate-api.com | Free |
 
 ---
@@ -67,7 +67,7 @@
 ## ✨ Key Features
 
 ### 🤖 AI Chatbot (RAG + LLM)
-- **Groq-powered** conversational assistant using Llama 3.1 8B Instant
+- **Groq-powered** conversational assistant using gpt-oss-120b
 - **RAG pipeline** — semantic keyword search across a structured knowledge base
 - **Dual-tier fallback** — LLM backend → client-side RAG (zero downtime)
 - **Lead capture** — detects buying intent and triggers inline forms
@@ -137,7 +137,7 @@
 | Node.js | Runtime |
 | Express 4 | HTTP server |
 | TypeScript (tsx) | Type-safe server |
-| Groq SDK | LLM inference (Llama 3.1) |
+| Groq SDK | LLM inference (gpt-oss-120b) |
 | Custom RAG | Knowledge retrieval engine |
 
 ### Infrastructure
@@ -283,7 +283,7 @@ User Message → RAG Keyword Search → Top 3 Knowledge Chunks
      ↓
 Pricing Query? → Inject live geo-converted prices
      ↓
-Groq API (Llama 3.1 8B) + System Prompt + Context
+Groq API (gpt-oss-120b) + System Prompt + Context
      ↓
 Response with [PRICING] blocks → PricingCard UI
      ↓
